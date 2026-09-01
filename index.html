@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Développeur Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#experience" class="nav-link">Expérience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#veille" class="nav-link">Veille</a></li>
+                <li><a href="#cv" class="nav-link">CV</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil / Héro -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Bonjour, je suis <span class="highlight">Baud Lilian</span></h1>
+                <p class="hero-subtitle">Je suis étudiant en développement web</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Me contacter</a>
+                    <a href="#projets" class="btn btn-secondary">Voir mes projets</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="avatar"><img src="asset/photo_de_profil.png" alt="photo de profil"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Je suis actuellement étudiant en BTS <strong class="highlight">SIO</strong>(Service Informatique
+                        aux Organisations)
+                        deuxieme année, avec l'option <strong class="highlight">SLAM</strong>(Solution Logiciel et
+                        Applications Métier).<br>
+                       Je suis passionné par l'Informatique, plus précisément par le développement d'applications et de sites
+                        Web.
+                    </p>
+                    <p>
+                        Je suis toujours en apprentissage continu pour maîtriser les dernières technologies du web.
+                    </p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Localisation:</span>
+                            <span>Besançon, France</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Expérience:</span>
+                            <span>Actuellement étudiant</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder"><img src="asset/photo_de_profil.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, JavaScripts</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend</h3>
+                    <p>Node.js, Python, PHP, SQL</p>
+                </div>
+                <!-- <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Design</h3>
+                    <p>UI/UX Design, Figma, Adobe XD</p>
+                </div> -->
+                <div class="skill-card">
+                    <div class="skill-icon">🔧</div>
+                    <h3>Outils</h3>
+                    <p>Git, VS Code</p>
+                </div>
+                <!-- <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>Responsive</h3>
+                    <p>Mobile-first, Responsive Design</p>
+                </div> -->
+                <!-- <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>Performance</h3>
+                    <p>Optimisation, SEO, Web Vitals</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"><img src="asset/cinesio/cinesio_1.png" alt="Capture du projet CinéSio">
+                    </div>
+                    <div class="project-content">
+                        <h3>CinéSio</h3>
+                        <p>Un catalogue de film avec la possibilité de se connecter pour ajouter des films</p>
+                        <div class="project-tags">
+                            <span class="tag">Html, CSS</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <details class="project-gallery">
+                            <summary>Voir les images</summary>
+                            <div class="gallery-list">
+                                <a class="gallery-link" href="asset/cinesio/cinesio_1.png" target="_blank"
+                                    rel="noopener noreferrer">Image 1</a>
+                                <a class="gallery-link" href="asset/cinesio/cinesio_2.png" target="_blank"
+                                    rel="noopener noreferrer">Image 2</a>
+                                <a class="gallery-link" href="asset/cinesio/cinesio_3.png" target="_blank"
+                                    rel="noopener noreferrer">Image 3</a>
+                                <a class="gallery-link" href="asset/cinesio/cinesio_4.png" target="_blank"
+                                    rel="noopener noreferrer">Image 4</a>
+                                <a class="gallery-link" href="asset/cinesio/cinesio_5.png" target="_blank"
+                                    rel="noopener noreferrer">Image 5</a>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"><img src="asset/gestionnaire_mousseron/gestionnaire_photo1.png"
+                            alt="Capture du gestionnaire de stock"></div>
+                    <div class="project-content">
+                        <h3>Gestionnaire de stock garage Mousseron</h3>
+                        <p>Rendre plus facile la gestion des stocks</p>
+                        <div class="project-tags">
+                            <span class="tag">Html, CSS</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <details class="project-gallery">
+                            <summary>Voir les images</summary>
+                            <div class="gallery-list">
+                                <a class="gallery-link" href="asset/gestionnaire_mousseron/gestionnaire_photo1.png"
+                                    target="_blank" rel="noopener noreferrer">Image 1</a>
+                                <a class="gallery-link" href="asset/gestionnaire_mousseron/gestionnaire_photo2.png"
+                                    target="_blank" rel="noopener noreferrer">Image 2</a>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"><img src="asset/site_mousseron/site_mousseron1.png"
+                            alt="Capture du site du garage Mousseron"></div>
+                    <div class="project-content">
+                        <h3>Site du Garage Mousseron</h3>
+                        <p>Jai crée un site pour le garage Mousseron, avec la possibilité de voir les employés, de voir
+                            les services possible et ainsi que de les contacter</p>
+                        <div class="project-tags">
+                            <span class="tag">Html, CSS</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">PostgreSQL</span>
+                        </div>
+                        <details class="project-gallery">
+                            <summary>Voir les images</summary>
+                            <div class="gallery-list">
+                                <a class="gallery-link" href="asset/site_mousseron/site_mousseron1.png" target="_blank"
+                                    rel="noopener noreferrer">Image 1</a>
+                                <a class="gallery-link" href="asset/site_mousseron/site_mousseron2.png" target="_blank"
+                                    rel="noopener noreferrer">Image 2</a>
+                                <a class="gallery-link" href="asset/site_mousseron/site_moussron3.png" target="_blank"
+                                    rel="noopener noreferrer">Image 3</a>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expérience Professionnelle -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Expérience Professionnelle</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <h3>Employé saisonnier</h3>
+                        <p class="company">Gaec du Centre Baud, Camille et Yves</p>
+                        <p class="date">Juillet - Août 2026</p>
+                        <p class="description">Travail saisonnier au sein d'une exploitation agricole à Evillers.</p>
+                        <ul class="experience-tasks">
+                            <li>Réalisation des tâches agricoles</li>
+                            <li>Participation au travail en équipe</li>
+                            <li>Gestion du rythme de production</li>
+                            <li>Adaptation aux missions saisonnières</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <h3>Employé saisonnier</h3>
+                        <p class="company">Gaec du Centre Baud, Camille et Yves</p>
+                        <p class="date">Juillet 2025</p>
+                        <p class="description">Expérience saisonnière dans un contexte agricole, avec des missions
+                            variées et un travail en équipe.</p>
+                        <ul class="experience-tasks">
+                            <li>Travail agricole et manutention</li>
+                            <li>Respect des consignes de sécurité</li>
+                            <li>Organisation du travail quotidien</li>
+                            <li>Collaboration avec l'équipe de production</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <h3>Animateur non diplômé</h3>
+                        <p class="company">Centre d'animation famille rurale</p>
+                        <p class="date">Juillet 2024</p>
+                        <p class="description">Animation de jeunes et encadrement d'activités au centre d'animation de
+                            la famille rurale à Evillers.</p>
+                        <ul class="experience-tasks">
+                            <li>Encadrement des activités</li>
+                            <li>Accueil et accompagnement des participants</li>
+                            <li>Organisation des ateliers</li>
+                            <li>Travail en lien avec la vie collective</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Stages -->
+    <section id="stages" class="stages">
+        <div class="container">
+            <h2 class="section-title">Stages</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <h3>Stage de première année de BTS SIO</h3>
+                        <p class="company">Garage Mousseron</p>
+                        <p class="date">26 mai au 26 juin</p>
+                        <p class="description">Stage de 5 semaines au garage Mousseron. J'ai développé un site web et un
+                            gestionnaire de stock.</p>
+                        <ul class="experience-tasks">
+                            <li>Création d'un site web pour le garage</li>
+                            <li>Développement d'un gestionnaire de stock</li>
+                            <li>Organisation et automatisation des informations</li>
+                            <li>Utilisation des outils de développement web</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-marker"></div>
+                    <div class="experience-content">
+                        <h3>Stage d'observation</h3>
+                        <p class="company">Energye Fermeture</p>
+                        <p class="date">1 semaine</p>
+                        <p class="description">Stage d'observation en 3e, réalisé au sein de l'entreprise Energye
+                            Fermeture.</p>
+                        <ul class="experience-tasks">
+                            <li>Découverte du milieu professionnel</li>
+                            <li>Observation du fonctionnement de l'entreprise</li>
+                            <li>Compréhension des tâches quotidiennes</li>
+                            <li>Approche du travail en équipe</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Certifications -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-badge">🔐</div>
+                    <h3>Certification CNIL</h3>
+                    <p class="cert-issuer">Modules de sensibilisation RGPD</p>
+                    <p class="cert-date">2025</p>
+                    <details class="cert-dropdown">
+                        <summary>Voir les PDF</summary>
+                        <div class="pdf-list">
+                            <div class="pdf-actions">
+                                <a class="pdf-link" href="asset/BAUD_Lilian_SIO1_module_1_cnil.pdf" target="_blank"
+                                    rel="noopener noreferrer">Voir module 1</a>
+                                <a class="pdf-link download" href="asset/BAUD_Lilian_SIO1_module_1_cnil.pdf"
+                                    download>Télécharger</a>
+                            </div>
+                            <div class="pdf-actions">
+                                <a class="pdf-link" href="asset/BAUD_Lilian_SIO1_module_2_cnil.pdf" target="_blank"
+                                    rel="noopener noreferrer">Voir module 2</a>
+                                <a class="pdf-link download" href="asset/BAUD_Lilian_SIO1_module_2_cnil.pdf"
+                                    download>Télécharger</a>
+                            </div>
+                            <div class="pdf-actions">
+                                <a class="pdf-link" href="asset/BAUD_Lilian_SIO1_module_3_cnil.pdf" target="_blank"
+                                    rel="noopener noreferrer">Voir module 3</a>
+                                <a class="pdf-link download" href="asset/BAUD_Lilian_SIO1_module_3_cnil.pdf"
+                                    download>Télécharger</a>
+                            </div>
+                            <div class="pdf-actions">
+                                <a class="pdf-link" href="asset/BAUD_Lilian_SIO1_module_4_cnil.pdf" target="_blank"
+                                    rel="noopener noreferrer">Voir module 4</a>
+                                <a class="pdf-link download" href="asset/BAUD_Lilian_SIO1_module_4_cnil.pdf"
+                                    download>Télécharger</a>
+                            </div>
+                            <div class="pdf-actions">
+                                <a class="pdf-link" href="asset/BAUD_Lilian_SIO1_module_5_cnil.pdf" target="_blank"
+                                    rel="noopener noreferrer">Voir module 5</a>
+                                <a class="pdf-link download" href="asset/BAUD_Lilian_SIO1_module_5_cnil.pdf"
+                                    download>Télécharger</a>
+                            </div>
+                            <div class="pdf-actions">
+                                <a class="pdf-link" href="asset/BAUD_Lilian_SIO1_module_6_cnil.pdf" target="_blank"
+                                    rel="noopener noreferrer">Voir module 6</a>
+                                <a class="pdf-link download" href="asset/BAUD_Lilian_SIO1_module_6_cnil.pdf"
+                                    download>Télécharger</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-badge">🛡️</div>
+                    <h3>Certification EBIOS</h3>
+                    <p class="cert-issuer">Évaluation du risque cyber</p>
+                    <p class="cert-date">2026</p>
+                    <details class="cert-dropdown">
+                        <summary>Voir les PDF</summary>
+                        <div class="pdf-list">
+                            <div class="pdf-actions">
+                                <a class="pdf-link" href="asset/BAUD_Lilian_SIO1_attestation_ebios.pdf" target="_blank"
+                                    rel="noopener noreferrer">Voir attestation</a>
+                                <a class="pdf-link download" href="asset/BAUD_Lilian_SIO1_attestation_ebios.pdf"
+                                    download>Télécharger</a>
+                            </div>
+                            <div class="pdf-actions">
+                                <a class="pdf-link" href="asset/BAUD_Lilian_SIO1_Certificat_ebios.pdf" target="_blank"
+                                    rel="noopener noreferrer">Voir certificat</a>
+                                <a class="pdf-link download" href="asset/BAUD_Lilian_SIO1_Certificat_ebios.pdf"
+                                    download>Télécharger</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-badge">🛡️</div>
+                    <h3>Certification ANSSI</h3>
+                    <p class="cert-issuer">Sécurité des systèmes d'information</p>
+                    <p class="cert-date">2025</p>
+                    <details class="cert-dropdown">
+                        <summary>Voir les PDF</summary>
+                        <div class="pdf-list">
+                            <div class="pdf-actions">
+                                <a class="pdf-link" href="asset/BAUD_Lilian_SIO1_attestation_anssi.pdf" target="_blank"
+                                    rel="noopener noreferrer">Voir attestation</a>
+                                <a class="pdf-link download" href="asset/BAUD_Lilian_SIO1_attestation_anssi.pdf"
+                                    download>Télécharger</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-badge">🛡️</div>
+                    <h3>Certification CYBER INI</h3>
+                    <p class="cert-issuer">Évaluation du risque cyber</p>
+                    <p class="cert-date">2026</p>
+                    <details class="cert-dropdown">
+                        <summary>Voir les PDF</summary>
+                        <div class="pdf-list">
+                            <div class="pdf-actions">
+                                <a class="pdf-link" href="asset/BAUD_Lilian_SIO1_attestation_cyberini.pdf"
+                                    target="_blank" rel="noopener noreferrer">Voir attestation</a>
+                                <a class="pdf-link download" href="asset/BAUD_Lilian_SIO1_attestation_cyberini.pdf"
+                                    download>Télécharger</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-badge">🌍</div>
+                    <h3>Langue vivante</h3>
+                    <p class="cert-issuer">Anglais</p>
+                    <p class="cert-date">Niveau B1/B2</p>
+                    <details class="cert-dropdown">
+                        <summary>Voir les PDF</summary>
+                        <div class="pdf-list">
+                            <div class="pdf-actions">
+                                <a class="pdf-link" href="asset/certif_langue_vivante.PDF" target="_blank"
+                                    rel="noopener noreferrer">Voir PDF</a>
+                                <a class="pdf-link download" href="asset/certif_langue_vivante.PDF"
+                                    download>Télécharger</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+
+                <div class="certification-card">
+                    <div class="cert-badge">💻</div>
+                    <h3>PIX</h3>
+                    <p class="cert-issuer">Certification numérique</p>
+                    <p class="cert-date">2025</p>
+                    <details class="cert-dropdown">
+                        <summary>Voir les PDF</summary>
+                        <div class="pdf-list">
+                            <div class="pdf-actions">
+                                <a class="pdf-link" href="asset/certification-pix.pdf" target="_blank"
+                                    rel="noopener noreferrer">Voir PDF</a>
+                                <a class="pdf-link download" href="asset/certification-pix.pdf" download>Télécharger</a>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Veille Technologique -->
+    <section id="veille" class="veille">
+        <div class="container">
+            <h2 class="section-title">Veille Technologique</h2>
+            <div class="veille-content">
+                <p class="veille-subtitle">Section en construction...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CV -->
+    <section id="cv" class="cv">
+        <div class="container">
+            <h2 class="section-title">Télécharger mon CV</h2>
+            <div class="cv-content">
+                <a href="asset/cv_lilian_baud.pdf" class="btn btn-secondary" target="_blank">
+                    <div class="cv-preview">
+                        <div class="cv-document">
+                            <p>📄 Mon CV complet en PDF</p>
+                        </div>
+                    </div>
+                </a>
+                <div class="cv-buttons">
+                    <a href="asset/cv_lilian_baud.pdf" class="btn btn-primary" target="_blank"
+                        download="cv_lilian_baud.pdf">Télécharger CV (PDF)</a>
+                </div>
+                <div class="cv-info">
+                    <h3>Mon profil professionnel</h3>
+                    <ul class="cv-highlights">
+                        <li><strong>Domaines:</strong> Développement Web Fullstack</li>
+                        <li><strong>Années d'expérience:</strong> Etudiant</li>
+                        <li><strong>Langages maîtrisés:</strong> JavaScript, Python, PHP, SQL</li>
+                        <!-- <li><strong>Frameworks:</strong>Node.js</li> -->
+                        <!-- <li><strong>Spécialités:</strong> </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            <p class="contact-subtitle">Parlons de votre prochain projet!</p>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:lilian.baud@gmail.com">lilian.baud@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <a href="tel:+33645057825">+33 6 45 05 78 25</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Localisation</h4>
+                            <p>Pontarlier, France</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="from_name" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="reply_to" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                    <a href="#" class="social-link">Twitter</a>
+                </div>
+                <p>&copy; 2026 Mon Portfolio. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
